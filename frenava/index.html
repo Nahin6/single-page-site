@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Frenava — Botanical Cleansing Cream</title>
+  <meta name="description" content="Frenava Botanical Cleansing Cream. A gentle, plant-powered cleanse inspired by morning gardens — natural & organic." />
+  <meta name="theme-color" content="#f6f1e7" />
+  <meta property="og:title" content="Frenava — Botanical Cleansing Cream" />
+  <meta property="og:description" content="A gentle, plant-powered cleanse inspired by morning gardens." />
+  <meta property="og:image" content="assets/spotlight.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/poster.jpg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="is-loading">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Intro loader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__mark">
+      <svg viewBox="0 0 120 120" class="loader__leaf">
+        <path class="draw" d="M60 108 C60 80 60 50 60 14" />
+        <path class="draw" d="M60 70 C40 64 28 50 26 32 C44 36 56 50 60 70Z" />
+        <path class="draw" d="M60 54 C78 48 90 36 94 18 C76 22 64 34 60 54Z" />
+        <path class="draw" d="M60 88 C78 84 90 74 96 60 C78 60 66 72 60 88Z" />
+      </svg>
+      <span class="loader__word">Frenava</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="nav" id="top">
+    <div class="nav__inner container">
+      <a href="#top" class="nav__logo" aria-label="Frenava home">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 29V5M16 19c-5-1.5-8-5-8.5-10 5 1 8 4.5 8.5 10Zm0-4c5-1.5 8-5 8.5-10-5 1-8 4.5-8.5 10Zm0 9c4.5-1 7.5-3.5 9-7-4.5 0-7.5 3-9 7Z"/></svg>
+        <span>Frenava</span>
+      </a>
+      <nav class="nav__links" id="nav-menu" aria-label="Primary">
+        <a href="#story">Story</a>
+        <a href="#product">The Cream</a>
+        <a href="#botanicals">Botanicals</a>
+        <a href="#ritual">Ritual</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#shop" class="btn btn--sm btn--ink nav__cta-mobile">Shop now</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="#shop" class="nav__bag" aria-label="Shopping bag, 0 items">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <span class="nav__bag-count" data-bag-count>0</span>
+        </a>
+        <a href="#shop" class="btn btn--sm btn--ink nav__cta">Shop now</a>
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero__media">
+        <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="assets/poster.jpg"
+               data-src-desktop="assets/hero.mp4" data-src-mobile="assets/hero-mobile.mp4" aria-hidden="true"></video>
+        <div class="hero__scrim"></div>
+      </div>
+      <canvas class="petals" aria-hidden="true"></canvas>
+
+      <div class="hero__content container">
+        <p class="eyebrow hero__eyebrow"><span class="dot"></span> Natural &amp; Organic · New Formula</p>
+        <h1 class="hero__title" data-split>
+          A cleanse that <em>blooms</em> with every wash
+        </h1>
+        <p class="hero__lede">
+          Frenava Botanical Cleansing Cream melts away the day with camellia oil, white tea
+          and wild rose — leaving skin soft, calm and quietly radiant.
+        </p>
+        <div class="hero__ctas">
+          <a href="#shop" class="btn btn--ink magnetic">
+            <span>Shop the cream</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#story" class="btn btn--ghost magnetic">Discover the story</a>
+        </div>
+        <ul class="hero__badges" aria-label="Product highlights">
+          <li><strong>98%</strong> natural origin</li>
+          <li><strong>pH 5.5</strong> skin balanced</li>
+          <li><strong>0</strong> sulfates</li>
+        </ul>
+      </div>
+
+      <button class="hero__play" aria-label="Pause background video" aria-pressed="false">
+        <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg>
+        <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5l12 7-12 7V5Z"/></svg>
+      </button>
+
+      <a href="#story" class="hero__scroll" aria-label="Scroll to story">
+        <span>Scroll</span>
+        <i></i>
+      </a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Camellia Oil</span><span class="sep">✿</span>
+        <span>White Tea</span><span class="sep">✿</span>
+        <span>Wild Rose</span><span class="sep">✿</span>
+        <span>Calendula</span><span class="sep">✿</span>
+        <span>Sulfate Free</span><span class="sep">✿</span>
+        <span>Vegan &amp; Cruelty Free</span><span class="sep">✿</span>
+        <span>Recyclable Packaging</span><span class="sep">✿</span>
+        <span>Camellia Oil</span><span class="sep">✿</span>
+        <span>White Tea</span><span class="sep">✿</span>
+        <span>Wild Rose</span><span class="sep">✿</span>
+        <span>Calendula</span><span class="sep">✿</span>
+        <span>Sulfate Free</span><span class="sep">✿</span>
+        <span>Vegan &amp; Cruelty Free</span><span class="sep">✿</span>
+        <span>Recyclable Packaging</span><span class="sep">✿</span>
+      </div>
+    </div>
+
+    <!-- STORY -->
+    <section class="story section" id="story">
+      <div class="container story__grid">
+        <div class="story__label" data-reveal>
+          <p class="eyebrow">01 — Our Story</p>
+          <svg class="botanical story__sprig" viewBox="0 0 160 220" aria-hidden="true">
+            <path class="draw" d="M80 214 C78 160 86 110 80 10" />
+            <path class="draw" d="M80 160 C56 154 40 138 36 114 C58 118 74 134 80 160Z" />
+            <path class="draw" d="M82 128 C106 120 120 104 124 80 C102 86 86 102 82 128Z" />
+            <path class="draw" d="M80 96 C60 90 48 76 46 56 C64 60 76 74 80 96Z" />
+            <path class="draw" d="M81 64 C96 58 106 46 108 30 C94 34 84 46 81 64Z" />
+            <circle class="draw" cx="80" cy="12" r="6" />
+            <circle class="draw" cx="72" cy="22" r="4" />
+            <circle class="draw" cx="89" cy="22" r="4" />
+          </svg>
+        </div>
+        <p class="story__text" data-words>
+          Frenava began in a sunlit garden, where morning dew settles on camellia leaves and wild rose
+          opens to the light. We bottled that stillness — a gentle cream cleanser that respects your
+          skin's natural balance, made with botanicals we'd be proud to grow ourselves.
+        </p>
+      </div>
+
+      <div class="container stats" data-reveal>
+        <div class="stat">
+          <span class="stat__num" data-count="98" data-suffix="%">0</span>
+          <span class="stat__label">Ingredients of natural origin</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count="12">0</span>
+          <span class="stat__label">Botanical extracts in every drop</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count="4" data-suffix="wk">0</span>
+          <span class="stat__label">To visibly softer, calmer skin</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count="100" data-suffix="%">0</span>
+          <span class="stat__label">Recyclable bottle &amp; carton</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT SHOWCASE (sticky) -->
+    <section class="showcase section" id="product">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">02 — The Cream</p>
+          <h2 class="h2">Soft as petals, <em>clean</em> as rain</h2>
+        </header>
+      </div>
+      <div class="container showcase__grid">
+        <div class="showcase__visual">
+          <div class="showcase__frame">
+            <img src="assets/spotlight.jpg" alt="Frenava pump bottle and carton under warm spotlight" class="is-active" data-shot="0" loading="lazy" width="1280" height="720" />
+            <img src="assets/box.jpg" alt="Close-up of the Frenava carton with botanical illustration" data-shot="1" loading="lazy" width="1280" height="720" />
+            <img src="assets/float.jpg" alt="Frenava bottle and carton floating among green leaves" data-shot="2" loading="lazy" width="1280" height="720" />
+            <img src="assets/branch.jpg" alt="Frenava bottle and carton beside a red leaf branch" data-shot="3" loading="lazy" width="1280" height="720" />
+            <div class="showcase__tag"><span data-shot-label>150 ml · Pump bottle</span></div>
+          </div>
+          <div class="showcase__progress" aria-hidden="true"><i></i></div>
+        </div>
+        <ol class="showcase__features">
+          <li class="feature is-active" data-feature="0" data-label="150 ml · Pump bottle">
+            <span class="feature__num">i.</span>
+            <h3>A cream that melts into silk</h3>
+            <p>A cushiony, low-foam texture glides over skin and dissolves makeup, SPF and city grime — no tightness, no squeak.</p>
+            <img class="feature__img" src="assets/spotlight.jpg" alt="" loading="lazy" />
+          </li>
+          <li class="feature" data-feature="1" data-label="Hand-drawn botanical art">
+            <span class="feature__num">ii.</span>
+            <h3>Illustrated by nature</h3>
+            <p>Every carton carries our hand-drawn garden — the very plants inside the formula, printed with soy inks on FSC-certified board.</p>
+            <img class="feature__img" src="assets/box.jpg" alt="" loading="lazy" />
+          </li>
+          <li class="feature" data-feature="2" data-label="Light, airy, weightless">
+            <span class="feature__num">iii.</span>
+            <h3>Fresh like a garden breeze</h3>
+            <p>A whisper of green tea and fig leaf — naturally derived, never overpowering. Skin feels light, refreshed and breathable.</p>
+            <img class="feature__img" src="assets/float.jpg" alt="" loading="lazy" />
+          </li>
+          <li class="feature" data-feature="3" data-label="Skin-barrier friendly">
+            <span class="feature__num">iv.</span>
+            <h3>Balanced at pH 5.5</h3>
+            <p>Gentle amino-acid cleansers and ceramides respect your moisture barrier — kind enough for sensitive skin, twice a day.</p>
+            <img class="feature__img" src="assets/branch.jpg" alt="" loading="lazy" />
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- BOTANICALS -->
+    <section class="botanicals section" id="botanicals">
+      <div class="container">
+        <header class="section-head section-head--center" data-reveal>
+          <p class="eyebrow">03 — Botanicals</p>
+          <h2 class="h2">Grown slowly, <em>chosen</em> carefully</h2>
+          <p class="section-lede">Four hero botanicals, each sourced from small farms and cold-pressed to keep their goodness intact.</p>
+        </header>
+
+        <div class="cards">
+          <article class="card tilt" data-reveal style="--d:0">
+            <svg class="botanical card__art" viewBox="0 0 120 120" aria-hidden="true">
+              <path class="draw" d="M60 112 C60 90 62 70 60 50" />
+              <circle class="draw" cx="60" cy="36" r="14" />
+              <path class="draw" d="M60 22 C52 10 44 12 46 22 M60 22 C68 10 76 12 74 22 M46 36 C34 30 32 40 46 44 M74 36 C86 30 88 40 74 44" />
+              <path class="draw" d="M60 84 C44 80 36 70 34 58 C48 60 58 70 60 84Z" />
+              <path class="draw" d="M61 96 C78 92 86 82 88 70 C74 72 64 82 61 96Z" />
+            </svg>
+            <h3>Camellia Oil</h3>
+            <p>Lightweight and rich in oleic acid — dissolves impurities while leaving a silky, nourished finish.</p>
+            <span class="card__tag">Nourish</span>
+          </article>
+          <article class="card tilt" data-reveal style="--d:1">
+            <svg class="botanical card__art" viewBox="0 0 120 120" aria-hidden="true">
+              <path class="draw" d="M60 112 C58 80 64 48 60 16" />
+              <path class="draw" d="M60 40 C46 36 38 26 36 14 C50 16 58 26 60 40Z" />
+              <path class="draw" d="M61 58 C76 54 84 44 86 30 C72 32 63 42 61 58Z" />
+              <path class="draw" d="M60 78 C44 74 36 62 34 48 C50 50 58 62 60 78Z" />
+              <path class="draw" d="M61 96 C78 92 86 80 88 66 C72 68 63 80 61 96Z" />
+            </svg>
+            <h3>White Tea</h3>
+            <p>Antioxidant-rich young leaves help defend against daily stressors and keep skin looking fresh.</p>
+            <span class="card__tag">Protect</span>
+          </article>
+          <article class="card tilt" data-reveal style="--d:2">
+            <svg class="botanical card__art" viewBox="0 0 120 120" aria-hidden="true">
+              <path class="draw" d="M60 112 C60 92 60 74 60 58" />
+              <path class="draw" d="M60 58 C40 56 34 36 48 26 C52 40 58 46 60 58Z" />
+              <path class="draw" d="M60 58 C80 56 86 36 72 26 C68 40 62 46 60 58Z" />
+              <path class="draw" d="M60 50 C50 38 52 20 60 12 C68 20 70 38 60 50Z" />
+              <path class="draw" d="M60 92 C46 90 38 82 36 72 C48 72 58 80 60 92Z" />
+              <path class="draw" d="M60 82 C74 80 82 72 84 62 C72 62 62 70 60 82Z" />
+            </svg>
+            <h3>Wild Rose</h3>
+            <p>Rosehip and petal extract soothe and soften, restoring a calm, even-looking glow.</p>
+            <span class="card__tag">Soothe</span>
+          </article>
+          <article class="card tilt" data-reveal style="--d:3">
+            <svg class="botanical card__art" viewBox="0 0 120 120" aria-hidden="true">
+              <path class="draw" d="M60 112 C60 90 60 70 60 52" />
+              <circle class="draw" cx="60" cy="36" r="8" />
+              <path class="draw" d="M60 28 L60 12 M68 30 L80 18 M68 38 L84 38 M66 44 L78 56 M52 44 L42 56 M52 38 L36 38 M52 30 L40 18" />
+              <path class="draw" d="M60 92 C44 88 36 78 34 66 C48 68 58 78 60 92Z" />
+              <path class="draw" d="M61 80 C76 76 84 66 86 54 C72 56 63 66 61 80Z" />
+            </svg>
+            <h3>Calendula</h3>
+            <p>A golden bloom treasured for comfort — calms redness and supports a healthy skin barrier.</p>
+            <span class="card__tag">Comfort</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARALLAX BANNER -->
+    <section class="banner" aria-label="Brand statement">
+      <div class="banner__img" data-parallax="0.18">
+        <img src="assets/petals.jpg" alt="" loading="lazy" />
+      </div>
+      <div class="banner__veil"></div>
+      <blockquote class="banner__quote container" data-reveal>
+        <p>“Skincare should feel like stepping into a garden after the rain.”</p>
+        <cite>— The Frenava Studio</cite>
+      </blockquote>
+    </section>
+
+    <!-- RITUAL -->
+    <section class="ritual section" id="ritual">
+      <div class="container">
+        <header class="section-head section-head--center" data-reveal>
+          <p class="eyebrow">04 — The Ritual</p>
+          <h2 class="h2">Three slow steps to <em>softer</em> skin</h2>
+        </header>
+
+        <div class="steps" data-steps>
+          <div class="steps__line" aria-hidden="true"><i></i></div>
+          <article class="step" data-reveal style="--d:0">
+            <div class="step__icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6c6 9 12 15 12 22a12 12 0 0 1-24 0c0-7 6-13 12-22Z"/></svg>
+            </div>
+            <span class="step__num">Step 01</span>
+            <h3>Pump</h3>
+            <p>Dispense 1–2 pumps onto dry fingertips. Warm gently between your hands.</p>
+          </article>
+          <article class="step" data-reveal style="--d:1">
+            <div class="step__icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="14"/><path d="M24 14a10 10 0 0 1 10 10M24 34a10 10 0 0 1-10-10"/></svg>
+            </div>
+            <span class="step__num">Step 02</span>
+            <h3>Massage</h3>
+            <p>Sweep over face and neck in slow circles for 60 seconds to lift away the day.</p>
+          </article>
+          <article class="step" data-reveal style="--d:2">
+            <div class="step__icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 30c4-4 8-4 14 0s10 4 14 0M10 22c4-4 8-4 14 0s10 4 14 0M10 38c4-4 8-4 14 0s10 4 14 0"/></svg>
+            </div>
+            <span class="step__num">Step 03</span>
+            <h3>Rinse</h3>
+            <p>Rinse with lukewarm water, pat dry and follow with your favourite serum.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery section" aria-label="Gallery">
+      <div class="container gallery__grid">
+        <figure class="gallery__item gallery__item--tall" data-reveal>
+          <div class="gallery__inner" data-parallax="-0.06"><img src="assets/float-2.jpg" alt="Frenava bottle floating with leaves" loading="lazy" /></div>
+        </figure>
+        <div class="gallery__copy" data-reveal>
+          <p class="eyebrow">05 — Made Mindfully</p>
+          <h2 class="h2">Beauty that <em>leaves</em> only good behind</h2>
+          <ul class="checks">
+            <li>Vegan, cruelty-free &amp; Leaping Bunny approved</li>
+            <li>Free from sulfates, parabens, silicones &amp; synthetic dyes</li>
+            <li>Dermatologist tested for sensitive skin</li>
+            <li>Recyclable bottle, refill pouch available</li>
+          </ul>
+        </div>
+        <figure class="gallery__item gallery__item--wide" data-reveal>
+          <div class="gallery__inner" data-parallax="0.06"><img src="assets/branch.jpg" alt="Frenava bottle and carton on marble" loading="lazy" /></div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews section" id="reviews">
+      <div class="container">
+        <header class="section-head reviews__head" data-reveal>
+          <div>
+            <p class="eyebrow">06 — Kind Words</p>
+            <h2 class="h2">Loved by <em>sensitive</em> skin</h2>
+          </div>
+          <div class="reviews__rating">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <span><strong>4.9</strong> / 5 · 2,400+ reviews</span>
+          </div>
+        </header>
+      </div>
+
+      <div class="carousel" data-carousel>
+        <div class="carousel__track" tabindex="0" aria-label="Customer reviews" role="region">
+          <figure class="review">
+            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <blockquote>“My skin used to feel tight after every cleanse. Frenava leaves it soft and calm — and it smells like a spring morning.”</blockquote>
+            <figcaption><span class="avatar">A</span><span><strong>Amara L.</strong> Combination skin</span></figcaption>
+          </figure>
+          <figure class="review">
+            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <blockquote>“Takes off my mascara and sunscreen without any scrubbing. The pump bottle looks gorgeous on my shelf too.”</blockquote>
+            <figcaption><span class="avatar">J</span><span><strong>Jonah P.</strong> Normal skin</span></figcaption>
+          </figure>
+          <figure class="review">
+            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <blockquote>“Finally a cleanser that doesn't trigger my redness. Three weeks in and my skin feels noticeably more balanced.”</blockquote>
+            <figcaption><span class="avatar">S</span><span><strong>Sofia R.</strong> Sensitive skin</span></figcaption>
+          </figure>
+          <figure class="review">
+            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <blockquote>“The texture is unreal — like whipped silk. A tiny amount goes a long way, my bottle lasted almost three months.”</blockquote>
+            <figcaption><span class="avatar">M</span><span><strong>Maya K.</strong> Dry skin</span></figcaption>
+          </figure>
+          <figure class="review">
+            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <blockquote>“I love that the box is recyclable and the ingredients are so clean. It's become my favourite evening ritual.”</blockquote>
+            <figcaption><span class="avatar">E</span><span><strong>Elena V.</strong> Oily skin</span></figcaption>
+          </figure>
+        </div>
+        <div class="container carousel__controls">
+          <div class="carousel__dots" role="tablist" aria-label="Choose review"></div>
+          <div class="carousel__arrows">
+            <button class="round-btn" data-prev aria-label="Previous review"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+            <button class="round-btn" data-next aria-label="Next review"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOP -->
+    <section class="shop section" id="shop">
+      <div class="container shop__grid">
+        <div class="shop__visual" data-reveal>
+          <div class="shop__blob" aria-hidden="true"></div>
+          <img src="assets/spotlight.jpg" alt="Frenava Botanical Cleansing Cream bottle and carton" loading="lazy" />
+          <span class="shop__badge"><b>Free</b> shipping over $50</span>
+        </div>
+        <div class="shop__panel" data-reveal style="--d:1">
+          <p class="eyebrow">07 — Shop</p>
+          <h2 class="h2">Botanical Cleansing <em>Cream</em></h2>
+          <div class="shop__price">
+            <span class="price" data-price>$38</span>
+            <span class="price-note" data-price-note>150 ml · approx. 3 months</span>
+          </div>
+
+          <fieldset class="options">
+            <legend>Size</legend>
+            <label class="option">
+              <input type="radio" name="size" value="150" data-price="38" data-note="150 ml · approx. 3 months" checked />
+              <span><b>150 ml</b> Pump bottle</span>
+            </label>
+            <label class="option">
+              <input type="radio" name="size" value="300" data-price="64" data-note="300 ml · approx. 6 months · save 16%" />
+              <span><b>300 ml</b> Bottle + refill</span>
+            </label>
+            <label class="option">
+              <input type="radio" name="size" value="50" data-price="16" data-note="50 ml · perfect for travel" />
+              <span><b>50 ml</b> Travel size</span>
+            </label>
+          </fieldset>
+
+          <div class="shop__buy">
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-qty="-1" aria-label="Decrease quantity">−</button>
+              <output data-qty-value aria-live="polite">1</output>
+              <button type="button" data-qty="1" aria-label="Increase quantity">+</button>
+            </div>
+            <button class="btn btn--ink btn--block magnetic" data-add>
+              <span>Add to bag</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+            </button>
+          </div>
+
+          <ul class="shop__perks">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg> Free delivery over $50</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 3-6.2M4 4v4h4"/></svg> 30-day happy-skin guarantee</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21c-5-3-8-7-8-11a8 8 0 0 1 16 0c0 4-3 8-8 11Z"/></svg> Plastic-neutral shipping</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section" id="faq">
+      <div class="container faq__grid">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">08 — FAQ</p>
+          <h2 class="h2">Questions, <em>gently</em> answered</h2>
+          <p class="section-lede">Can't find what you're looking for? Write to us at <a href="mailto:hello@frenava.com">hello@frenava.com</a>.</p>
+        </header>
+        <div class="accordion" data-reveal style="--d:1">
+          <details class="acc">
+            <summary>Is Frenava suitable for sensitive skin?</summary>
+            <div class="acc__body"><p>Yes. The formula is pH-balanced at 5.5, fragrance comes only from natural botanical extracts, and it has been dermatologist tested on sensitive skin.</p></div>
+          </details>
+          <details class="acc">
+            <summary>Does it remove makeup and sunscreen?</summary>
+            <div class="acc__body"><p>Absolutely. Camellia oil dissolves makeup, mascara and SPF. For heavy makeup, massage for a little longer before rinsing.</p></div>
+          </details>
+          <details class="acc">
+            <summary>How long does one bottle last?</summary>
+            <div class="acc__body"><p>Used twice daily with 1–2 pumps, a 150 ml bottle lasts roughly three months.</p></div>
+          </details>
+          <details class="acc">
+            <summary>Is the packaging recyclable?</summary>
+            <div class="acc__body"><p>The bottle is made from recyclable PP and the carton is FSC-certified board printed with soy inks. We also offer a refill pouch with 70% less plastic.</p></div>
+          </details>
+          <details class="acc">
+            <summary>What if it doesn't suit my skin?</summary>
+            <div class="acc__body"><p>Every order is covered by our 30-day happy-skin guarantee. If you're not in love, we'll refund you — no questions asked.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter" aria-labelledby="nl-title">
+      <svg class="botanical newsletter__art newsletter__art--l" viewBox="0 0 160 220" aria-hidden="true">
+        <path class="draw" d="M80 214 C78 160 86 110 80 10" />
+        <path class="draw" d="M80 160 C56 154 40 138 36 114 C58 118 74 134 80 160Z" />
+        <path class="draw" d="M82 128 C106 120 120 104 124 80 C102 86 86 102 82 128Z" />
+        <path class="draw" d="M80 96 C60 90 48 76 46 56 C64 60 76 74 80 96Z" />
+        <path class="draw" d="M81 64 C96 58 106 46 108 30 C94 34 84 46 81 64Z" />
+      </svg>
+      <svg class="botanical newsletter__art newsletter__art--r" viewBox="0 0 160 220" aria-hidden="true">
+        <path class="draw" d="M80 214 C78 160 86 110 80 10" />
+        <path class="draw" d="M80 160 C56 154 40 138 36 114 C58 118 74 134 80 160Z" />
+        <path class="draw" d="M82 128 C106 120 120 104 124 80 C102 86 86 102 82 128Z" />
+        <path class="draw" d="M80 96 C60 90 48 76 46 56 C64 60 76 74 80 96Z" />
+        <path class="draw" d="M81 64 C96 58 106 46 108 30 C94 34 84 46 81 64Z" />
+      </svg>
+      <div class="container newsletter__inner" data-reveal>
+        <h2 class="h2" id="nl-title">Join the <em>garden</em></h2>
+        <p>Slow skincare notes, early access to new blooms and 10% off your first order.</p>
+        <form class="nl-form" novalidate>
+          <label for="nl-email" class="sr-only">Email address</label>
+          <input id="nl-email" type="email" name="email" placeholder="your@email.com" autocomplete="email" required />
+          <button class="btn btn--ink" type="submit">Subscribe</button>
+          <p class="nl-form__msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#top" class="nav__logo">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 29V5M16 19c-5-1.5-8-5-8.5-10 5 1 8 4.5 8.5 10Zm0-4c5-1.5 8-5 8.5-10-5 1-8 4.5-8.5 10Zm0 9c4.5-1 7.5-3.5 9-7-4.5 0-7.5 3-9 7Z"/></svg>
+          <span>Frenava</span>
+        </a>
+        <p>Natural &amp; organic skincare, grown slowly and made with care.</p>
+      </div>
+      <nav aria-label="Shop links">
+        <h4>Shop</h4>
+        <a href="#shop">Cleansing Cream</a>
+        <a href="#shop">Refill Pouch</a>
+        <a href="#shop">Travel Size</a>
+      </nav>
+      <nav aria-label="About links">
+        <h4>About</h4>
+        <a href="#story">Our Story</a>
+        <a href="#botanicals">Botanicals</a>
+        <a href="#ritual">The Ritual</a>
+      </nav>
+      <nav aria-label="Help links">
+        <h4>Help</h4>
+        <a href="#faq">FAQ</a>
+        <a href="mailto:hello@frenava.com">Contact</a>
+        <a href="#faq">Shipping &amp; Returns</a>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span data-year>2026</span> Frenava. All rights reserved.</span>
+      <span class="footer__big" aria-hidden="true">Frenava</span>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#top" class="to-top" aria-label="Back to top">
+    <svg viewBox="0 0 48 48" aria-hidden="true">
+      <circle class="to-top__track" cx="24" cy="24" r="21" />
+      <circle class="to-top__ring" cx="24" cy="24" r="21" />
+      <path d="M24 31V17M18 23l6-6 6 6" />
+    </svg>
+  </a>
+
+  <!-- Toast -->
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
